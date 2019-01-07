@@ -1,0 +1,27 @@
+{
+  "name": "polymer-dentro-laravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --port 9009",
+    "build:es6": "webpack --mode production --config webpack-es6.config.js",
+    "build:es5": "webpack --mode production --config webpack-es5.config.js",
+    "build": "npm run build:es5 && npm run build:es6"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^4.6.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.1.0",
+    "@webcomponents/webcomponentsjs": "^2.2.1"
+  }
+}
